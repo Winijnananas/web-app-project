@@ -1,0 +1,124 @@
+/* Container styles */
+.form-container {
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    padding: 20px;
+  }
+  
+  .form-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styles */
+  .form-header {
+    background-color: #2563eb;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+  }
+  
+  /* Form styles */
+  .tax-form {
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+  }
+  
+  /* Checkbox styles */
+  .form-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .branch-group {
+    flex: 1;
+    margin-bottom: 0;
+  }
+  
+  /* Disabled input styles */
+  input:disabled {
+    background-color: #f1f5f9;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .form-card {
+      margin: 0 10px;
+    }
+    
+    .form-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .branch-group {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-header {
+      padding: 10px 15px;
+    }
+    
+    .tax-form {
+      padding: 15px;
+    }
+  }
